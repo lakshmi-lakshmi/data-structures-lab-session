@@ -1,0 +1,40 @@
+#include <stdio.h>
+int main(void) 
+{
+      int arr[100], i, j, size;
+     printf("Enter the size of an array \n");
+     scanf("%d",&size);
+     if(size>1)
+     {
+     printf("Enter the elements in an array\n");
+     for( i = 0; i < size; i++) 
+	 {
+     scanf("%d", &arr[i]);
+     }
+	 }
+	 else if(size<0)
+            {
+    	      printf("You have entered negative number-invalid");
+        	}
+	 else 
+	        {
+    	     printf("\n\tCharacters are not alowed..!!");
+    	    printf("\n\tEnter the valid input!");
+            }
+	 for(i = 0; i < size; i++)
+	 {
+         for(j=i+1; j < size; j++)
+		 {
+   
+           if(arr[i] == arr[j])
+		   {
+    
+              printf("Duplicate element in an array is %d\n ",arr[i]);
+            }
+            
+         }
+	}
+	  
+    
+      return 0;
+ }
