@@ -1,5 +1,5 @@
 #include <stdio.h>
-void main()
+int main()
 {
    int m, n, i, j, matrix[10][10], transpose[10][10];
    printf("Enter rows and columns:");
@@ -17,7 +17,7 @@ void main()
          printf("%d\t", transpose[i][j]);
       printf("");  
 	  }
-   getch();
+   return 0;
 }
 
 
